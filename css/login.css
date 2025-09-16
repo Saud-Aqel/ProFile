@@ -1,0 +1,130 @@
+:root{
+  --Header: rgba(0, 0, 0, 0.241);
+  --Line: rgb(206, 206, 183);
+}
+*{ margin:0;
+   padding:0;
+   box-sizing:border-box;
+   font-family: 'Poppins', sans-serif; 
+  }
+
+body{
+  background-image: url(../images/image.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  color: var(--Line);
+  min-height:100vh;
+}
+/* Header */
+header{
+  width:100%;
+  padding:18px 28px;
+  display:flex;
+  align-items:center;
+  gap:30px;
+  background: var(--Header);
+  backdrop-filter: blur(4px);
+}
+
+.Titel{ 
+  display:flex;
+  align-items:center;
+  gap:10px; 
+  color:var(--Line);
+  font-weight:700;
+  font-size:18px; }
+
+/* Nav */
+nav ul.nav{ 
+  list-style:none;
+  display:flex;
+  gap:12px;
+  margin-left:auto; }
+
+nav ul.nav li a{
+  color:var(--Line);
+  text-decoration:none;
+  padding:6px 10px;
+  border-radius:8px;
+  font-size:14px;
+}
+nav ul.nav li a:hover{ background: rgba(255,255,255,0.04); color: #fff; }
+      form {
+         border: 1px solid #cccccc94;
+         border-radius: 20px;
+         background-color: transparent;
+         width: 300px;
+         margin: 120px auto;
+         padding: 20px;
+         background-color: transparent;
+         text-align: center;
+         color: #fff;
+         backdrop-filter:blur(15px);
+
+      }
+      input{
+         width:94%;
+         padding: 10px;
+         margin: 10px 0;
+         border-radius: 20px;
+         background-color: transparent;
+         color:#fff;
+         border: 1px solid #ffffff94;
+         outline: none;
+      }
+      button{
+         width: 100%;
+         padding: 10px;
+         border-radius: 20px;
+         background-color: var(--Line);
+         color: #000;
+         border: none;
+         cursor: pointer;
+         margin-top: 20px;
+         font-size: 18px;
+         font-weight: 600;
+      }
+      
+      button:hover{
+         background-color: #fff;
+         color: black;
+      }
+
+      input::placeholder{
+         color: rgba(255, 255, 255, 0.7);
+      }
+
+      a{
+         color: #fff;
+      }
+      
+      a:hover{
+         color: #c08be3;
+      }
+      
+      p{
+         font-size: 14px;
+         margin-top: 30px;
+      }
+
+      /* Footer */
+.site-footer{
+  position: fixed;       
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--Header);
+  color: var(--Line);
+  font-size: 16px;
+  font-weight: 600;
+  backdrop-filter: blur(4px);
+  border-top: 1px solid rgba(255,255,255,0.03);
+  z-index: 100;
+  padding: 0 16px;
+  text-align: center;
+  box-shadow: 0 -6px 18px rgba(0,0,0,0.6);
+}
